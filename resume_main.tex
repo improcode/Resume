@@ -1,0 +1,167 @@
+% !TeX program = xelatex
+% ABOVE MAGIC COMMENT --> https://www.joelotz.com/blog/2022/enabling-different-latex-compilers-in-vs-code.html
+\documentclass{my_cv}
+\title{Resume}
+\author{Artur] Miłkowski}
+\date{June 2024}
+\usepackage[a4paper, left=2em, right=2em, top=2.5em, bottom=0em]{geometry}
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage[none]{hyphenat}
+\usepackage{changepage}
+\usepackage{hyperref}
+
+\defaultfontfeatures{LetterSpace=2.5}
+
+\hypersetup{
+    %unicode=true,
+    colorlinks=true,
+    urlcolor=black,
+}
+
+\setmainfont{ArialMT}[
+    Path=./fonts/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Medium,
+    ItalicFont=*-Italic,
+    ]
+
+\begin{document}
+
+
+\begin{multicols}{3}
+    \section{\badge{flashyGreen}{\texttt{\Large {\textbf{Front-end Developer}}}}}
+    \columnbreak
+    \section{\xhrulefill{black}{0.6em}}
+    \columnbreak
+    \section{\xhrulefill{black}{0.6em} }
+\end{multicols}
+
+\begin{multicols}{2}
+    \section{\Huge \textbf{Artur \newline Miłkowski}}
+    \cvParagraph{\href{tel:48694895300}{+48 694 895 300} \newline \href{mailto:art.milkowski@gmail.com}{art.milkowski@gmail.com} \newline \href{https://github.com/improcode}{github.com/improcode}}
+
+    \columnbreak
+    \begin{spacing}{1.5}
+        I’m a specialist in React ecosystem. However, working with this framework isn’t essential - I’m more interested in expanding my knowledge of concepts and patterns than being tied to specific tools. I’m currently learning how to write easily testable apps with clearly separated layers (communication, business logic, view). It is my belief that is the underrated element in the art of front-end development, especially in large apps.
+    \end{spacing}
+\end{multicols}
+
+\vspace{1em}
+\setlength{\columnsep}{1cm}
+
+\cvSection{Experience}
+\begin{adjustwidth}{2em}{0em}
+
+\positionAndCompanyLine{Team Leader}{9bits}{06/2022 - 06/2024}
+\project{Ecommerce platform}{internal; pre-production; maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item coding: 90\% development / 10\% maintenance
+    \item team management (3-6 people)
+    \item responsibility for delivering the sprint goal
+    \item HR issues (evaluation and recruitment interviews, vacation approvals, etc.)
+    \item decomposing business requirements into technical tasks
+    \item increasing the competences of the team
+\end{itemize}
+\techStackList{Typescript, Next.js, NX, Redux-Toolkits, Styled-Components, Tailwind, Jest}
+\vspace{0.5em}
+
+\positionAndCompanyLine{Front-end Developer}{9bits}{05/2020 - 06/2022}
+\project{Ecommerce B2B}{pre-production and maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item coding: 60\% development / 40\% maintenance
+    \item decomposition of business requirements into technical tasks
+    \item buddy for junior developers
+    \item coordination of developers' work (epic scope)
+    \item production deploys
+\end{itemize}
+\techStackList{Typescript, React, Redux-Saga, Styled Components, Jest, Storybook}
+\vspace{0.5em}
+
+\positionAndCompanyLine{Junior Front-end Developer}{9bits}{07/2019 - 05/2020}
+\project{Ecommerce B2C}{maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item coding: 30\% development / 70\% maintenance
+\end{itemize}
+\techStackList{React, Redux-Thunk, LESS, server side rendering (Express.js)}
+\vspace{0.5em}
+
+\positionAndCompanyLine{Front-end Developer}{Hatonero}{02/2019 - 07/2019}
+\project{Administration panel for educational service}{pre-production and maintenance}
+\begin{adjustwidth}{1em}{0em}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item coding: 80\% development / 20\% maintenance
+\end{itemize}
+\techStackList{VUE.JS, Firebase, Vuetify.}
+\end{adjustwidth}
+\project{Real-time educational game/survey}{maintenance}
+\begin{adjustwidth}{1em}{0em}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item coding: 100\% maintenance
+\end{itemize}
+\techStackList{Backbone.js, Firebase.}
+\end{adjustwidth}
+\vspace{1em}
+
+\positionAndCompanyLine{Gap to learn programming}{freelance}{02/2018 - 02/2019}
+\techStackList{HTML/CSS, JavaScript, Wordpress, Angular.}
+\vspace{0.3em}
+
+\positionAndCompanyLine{Account Manager}{Vena Art}{11/2015 - 02/2018}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item customer service
+    \item creative - conceptual work
+    \item project management
+    \item preparation of offers for potential clients
+    \item media production (print, video, web)
+\end{itemize}
+\techStackList{Microsoft Office, Google Analytics.}
+
+\end{adjustwidth}
+
+\vspace{1em}
+
+\cvSection{Education}
+\begin{adjustwidth}{2em}{0em}
+
+\positionAndCompanyLine{Certificate}{InfoShare Academy}{06/2018}
+\begin{itemize}
+    \item 320 hours of workshop
+    \item Topics: HTML5/CSS3, JavaScript, Bootstrap, GIT, SCRUM, REST, JSON, AJAX, React
+\end{itemize}
+
+\positionAndCompanyLine{Master of Economics}{Maria Curie-Skłodowska University (UMCS) Lublin}{10/2015}
+
+\end{adjustwidth}
+\vspace{1em}
+
+\begin{multicols}{2}
+    \cvSection{Additional activity}
+    \positionAndCompanyLine{}{Forum Młodych Lewiatan}{2012-2015}
+    \begin{itemize}
+        \item Organization of business trainings and conferences (business education for students)
+        \item Organization of Global Entrepreneurship Week in Lublin, editions 2012-2014
+        \item Team leader
+    \end{itemize}
+    \columnbreak
+    \cvSection{Languages}
+    \begin{adjustwidth}{1em}{0em}
+    Polish: Native language
+    \newline
+    English: Upper-Intermediate (B2)
+    \end{adjustwidth}
+\end{multicols}
+
+
+\end{document} ​

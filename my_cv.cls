@@ -1,0 +1,105 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{my_cv}[My custom CV class]
+%\LoadClass[paper=a4,fontsize=10pt]{scrartcl}
+\LoadClass[paper=a4,fontsize=10pt]{article}
+\RequirePackage{titlesec}
+\RequirePackage{xcolor}
+\RequirePackage{xhfill}
+
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%--COLORS-----------------------------------------------------
+\definecolor{lightGray}{HTML}{EFEFEF}
+\definecolor{flashyGreen}{HTML}{00FF00}
+\definecolor{lavenderBlue}{HTML}{C9DAF8}
+\definecolor{queenPink}{HTML}{ead1dc}
+\definecolor{black}{HTML}{000000}
+\definecolor{white}{HTML}{ffffff}
+%--COLORS----------------------------------------------------
+
+\usepackage{xhfill}
+
+\renewcommand{\labelitemi}{$\bullet$}
+
+\newcommand\ruleafter[1]{#1~~\xhrulefill{black}{0.5em}} % add rule after title
+
+\newcommand{\jobPosition}[1]{
+  \Large \textbf \colorbox{flashyGreen}{#1} \xhrulefill{black}{0.5em}
+}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}
+  {}
+  []
+
+\titleformat{\subsection}
+  {\large\scshape\raggedright}
+  {}{0em}
+  {}
+
+\newcommand{\cvSection}[1]{\section{\ruleafter{#1}}}
+
+\newcommand{\positionAndCompanyLine}[3]{
+  \subsection{\textbf{#1} \textit{#2} \hfill \badgeWithFontColor{black}{white}{#3}}
+}
+
+\newcommand{\badge}[2]{
+  \colorbox{#1}{\hspace{0.1em} #2 \hspace{0.1em}}
+}
+
+\newcommand{\badgeWithFontColor}[3]{
+  \colorbox{#1}{\hspace{0.1em} \color{#2} \textbf{#3}  \hspace{0.1em}}
+}
+
+\newcommand{\project}[2]{
+  \begin{flushleft}{\badge{lightGray}{#1} #2} \end{flushleft}
+}
+
+\newcommand{\techStackList}[1]{
+  \begin{flushleft}{\badge{queenPink}{Tech Stack} #1}\end{flushleft}
+}
+
+\newcommand{\educationTitleLine}[2]{
+  \subsection[#1]{\textbf{#1} \hfill \badgeWithFontColor{black}{white}{#2}}
+}
+
+\newcommand{\cvParagraph}[1]{
+  \begin{spacing}{1.5}
+    #1
+  \end{spacing}
+}
+
+\newcommand{\datedsubsection}[2]{%
+  \subsection[#1]{\textbf{#1} \textit{#2} \hfill #2}%
+}
+
+\newcommand{\name}[1]{%
+  \centerline{\Huge{#1}}
+}
+
+\newcommand\contact[5]{%
+    \centerline{%
+        \makebox[0pt][c]{%
+            #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
+            \ #4 \ \ #5%
+        }%
+    }%
+}
+
+\newcommand{\longcontact}[5]{%
+    \noindent
+    #1\hfill {\large\textperiodcentered}\hfill #2\hfill
+    {\large\textperiodcentered}\hfill #3\\
+    #4\hfill #5%
+}
+
+\newcommand{\headerrule}[2]{%
+\xhrulefill{#1}{#2}%
+\vspace{1em}}
+
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
