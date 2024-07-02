@@ -5,8 +5,10 @@
 \RequirePackage{titlesec}
 \RequirePackage{xcolor}
 \RequirePackage{xhfill}
+\RequirePackage{hyperref}
 
-\pagestyle{empty}           % No pagenumbers/headers/footers
+% No pagenumbers/headers/footers
+\pagestyle{empty}
 
 %--COLORS-----------------------------------------------------
 \definecolor{lightGray}{HTML}{EFEFEF}
@@ -38,10 +40,12 @@
   {}{0em}
   {}
 
-\newcommand{\cvSection}[1]{\section{\ruleafter{#1}}}
+\newcommand{\headerSection}[1]{\section{\texorpdfstring{#1}{}}}
+
+\newcommand{\cvSection}[1]{\section{\texorpdfstring{\ruleafter{#1}}{}}}
 
 \newcommand{\positionAndCompanyLine}[3]{
-  \subsection{\textbf{#1} \textit{#2} \hfill \badgeWithFontColor{black}{white}{#3}}
+  \subsection{\texorpdfstring{\textbf{#1} \textit{#2} \hfill \badgeWithFontColor{black}{white}{#3}}{}}
 }
 
 \newcommand{\badge}[2]{
@@ -70,34 +74,7 @@
   \end{spacing}
 }
 
-\newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{\textbf{#1} \textit{#2} \hfill #2}%
-}
-
-\newcommand{\name}[1]{%
-  \centerline{\Huge{#1}}
-}
-
-\newcommand\contact[5]{%
-    \centerline{%
-        \makebox[0pt][c]{%
-            #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-            \ #4 \ \ #5%
-        }%
-    }%
-}
-
-\newcommand{\longcontact}[5]{%
-    \noindent
-    #1\hfill {\large\textperiodcentered}\hfill #2\hfill
-    {\large\textperiodcentered}\hfill #3\\
-    #4\hfill #5%
-}
-
-\newcommand{\headerrule}[2]{%
-\xhrulefill{#1}{#2}%
-\vspace{1em}}
-
+% if necessary breaking the page --> https://tex.stackexchange.com/questions/94699/absolutely-definitely-preventing-page-break
 \newenvironment{absolutelynopagebreak}
   {\par\nobreak\vfil\penalty0\vfilneg
    \vtop\bgroup}
