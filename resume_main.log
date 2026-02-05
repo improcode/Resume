@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.4)  5 FEB 2026 21:37
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.4)  5 FEB 2026 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -322,6 +322,24 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count311
 \cp@tempcnt=\count312
 )
+
+/Users/artur/Documents/projectsPocket/Resume/resume_main.tex:16: LaTeX Error: Option clash for package hyperref.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 
+     
+The package hyperref has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [unicode]
+Adding the global options:
+  ,unicode
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
 Package hyperref Info: Option `unicode' set `true' on input line 23.
 Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 
@@ -351,11 +369,10 @@ Package fontspec Info:
 (fontspec)             <->"[./fonts/ArialMT-Italic.ttf]/OT:script=latn;language=dflt;letterspace=2.5;mapping=tex-text;"
 
 
-
 LaTeX Warning: Unused global option(s):
     [paper,fontsize].
 
-(./resume_main.aux)
+No file resume_main.aux.
 \openout1 = `resume_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -368,7 +385,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 40.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 40.
@@ -383,10 +400,12 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 Package hyperref Info: Link coloring ON on input line 40.
- (./resume_main.out) (./resume_main.out)
 \@outlinefile=\write3
 \openout3 = `resume_main.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -497,14 +516,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
  ***********
-Package rerunfilecheck Info: File `resume_main.out' has not changed.
-(rerunfilecheck)             Checksum: B8FECD9EE44862D3EA2EF57B56084AE6;879.
+
+
+Package rerunfilecheck Warning: File `resume_main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume_main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  B8FECD9EE44862D3EA2EF57B56084AE6;879.
  ) 
 Here is how much of TeX's memory you used:
- 12464 strings out of 474256
- 250273 string characters out of 5742728
+ 12452 strings out of 474256
+ 250086 string characters out of 5742728
  1943542 words of memory out of 5000000
- 34985 multiletter control sequences out of 15000+600000
+ 34979 multiletter control sequences out of 15000+600000
  558549 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  87i,5n,93p,379b,505s stack positions out of 10000i,1000n,20000p,200000b,200000s
