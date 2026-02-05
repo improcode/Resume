@@ -6,6 +6,8 @@
 \RequirePackage{xcolor}
 \RequirePackage{xhfill}
 \RequirePackage{hyperref}
+\RequirePackage{environ}
+\RequirePackage{needspace}
 
 % No pagenumbers/headers/footers
 \pagestyle{empty}
@@ -72,6 +74,21 @@
   \begin{spacing}{1.5}
     #1
   \end{spacing}
+}
+
+% Dynamic block: measure height, then \needspace that much so block moves to next page if it doesn't fit
+\newsavebox\experienceblockbox
+\NewEnviron{experienceBlock}{%
+  \begin{lrbox}{\experienceblockbox}%
+  \begin{minipage}{\linewidth}%
+  \BODY
+  \vspace{1.5em}%
+  \end{minipage}%
+  \end{lrbox}%
+  \dimen0=\ht\experienceblockbox
+  \advance\dimen0 by \dp\experienceblockbox
+  \needspace{\dimen0}%
+  \noindent\usebox{\experienceblockbox}%
 }
 
 % if necessary breaking the page --> https://tex.stackexchange.com/questions/94699/absolutely-definitely-preventing-page-break

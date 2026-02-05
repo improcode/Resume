@@ -41,7 +41,7 @@
 
 
 \begin{multicols}{3}
-    \headerSection{\badge{flashyGreen}{\Large {\textbf{Front-end Developer}}}}
+    \headerSection{\badge{flashyGreen}{\Large {\textbf{Full-stack Developer}}}}
     \columnbreak
     \headerSection{\xhrulefill{black}{0.6em}}
     \columnbreak
@@ -50,11 +50,13 @@
 
 \begin{multicols}{2}
     \headerSection{\Huge \textbf{Artur \newline Miłkowski}}
-    \cvParagraph{\href{tel:48694895300}{+48 694 895 300} \newline \href{mailto:art.milkowski@gmail.com}{art.milkowski@gmail.com} \newline \href{https://github.com/improcode}{github.com/improcode}}
+    \cvParagraph{\href{tel:48694895300}{+48 694 895 300} \newline \href{mailto:art.milkowski@gmail.com}{art.milkowski@gmail.com}}
+    % \newline \href{https://github.com/improcode}{github.com/improcode}
 
     \columnbreak
     \begin{spacing}{1.5}
-        I’m a specialist in React ecosystem. However, working with this framework isn’t essential - I’m more interested in expanding my knowledge of concepts and patterns than being tied to specific tools. I’m currently learning how to write easily testable apps with clearly separated layers (communication, business logic, view). It is my belief that is the underrated element in the art of front-end development, especially in large apps.
+        I've shipped production apps end-to-end, led a team, and learned to translate business needs into technical decisions.
+        My core is React but I keep reaching beyond it (backend, mobile). Currently exploring how AI-driven development can redefine what a single developer can ship.
     \end{spacing}
 \end{multicols}
 
@@ -64,65 +66,113 @@
 \cvSection{Experience}
 \begin{adjustwidth}{2em}{0em}
 
-\positionAndCompanyLine{Team Leader}{9bits}{06/2022 - 06/2024}
-\project{Ecommerce platform}{internal; pre-production; maintenance}
+\begin{experienceBlock}
+\positionAndCompanyLine{Full-stack Developer}{freelance}{10/2024 - now}
+\project{Akademia LTCA}{Cross-platform learning app (iOS/Android + web)}
 \begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
 \begin{itemize}
-    \item coding: 90\% development / 10\% maintenance
+    \item work split: 80\% greenfield / 20\% maintenance
+    \item technical design and stack
+    \item cooperation with the product team in creating business requirements for app
+    \item responsibility for delivering an application that complies with the product team's expectations
+    \item app management in the App Store and Google Play (release on the Polish market only)
+    \item integration with external services – video/audio streaming, online webinars, push notifications, Live Updates for Capacitor and client API
+    \item consulting and recommending solutions for problems that arise during application development
+\end{itemize}
+\techStackList{Capacitor, React, TypeScript, TanStack Router/Query, Tailwind, Radix UI, Node.js/Express, Firebase}
+\end{experienceBlock}
+
+\begin{experienceBlock}
+\positionAndCompanyLine{Full-stack Developer}{freelance}{12/2025 - now}
+\project{KGW}{Association management platform — calendar, document flow, task management, reports system}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item work split: 100\% greenfield
+    \item AI-driven development: end-to-end delivery from business requirements: database, backend, UI
+\end{itemize}
+\techStackList{Nuxt 4, Vue, Quasar, TypeScript, Node.js/Fastify, MySQL}
+\end{experienceBlock}
+
+\begin{experienceBlock}
+\positionAndCompanyLine{Cloud Engineer}{LetzCode (Provider to the European Commission)}{03/2025 - 05/2025}
+\project{Network Infrastructure as Code}{Migration of NSX-T network settings to Terraform}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item documented existing NSX-T configuration from the management UI and expressed it as declarative Terraform configuration.
+    \item resolved configuration conflicts between desired state and live infrastructure (plan/apply)
+    \item AI-driven development: Python scripts for automating migration of settings to Terraform.
+\end{itemize}
+\techStackList{NSX-T, Terraform, Python}
+\end{experienceBlock}
+
+\begin{experienceBlock}
+\positionAndCompanyLine{Team Leader}{9bits}{06/2022 - 06/2024}
+\project{Sellcentive}{Drag-and-drop ecommerce builder}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item Work split: 90\% greenfield / 10\% maintenance
+    \item frontend architecture and key technical decisions
     \item team management (3-6 people)
     \item responsibility for delivering the sprint goal
     \item HR issues (evaluation and recruitment interviews, vacation approvals, etc.)
     \item decomposing business requirements into technical tasks
     \item increasing the competences of the team
 \end{itemize}
-\techStackList{Typescript, Next.js, NX, Redux-Toolkits, Styled-Components, Tailwind, Jest.}
-\vspace{0.5em}
+\techStackList{Typescript, Next.js, NX, Redux-Toolkits, Styled-Components, Tailwind, Jest}
+\end{experienceBlock}
 
+\begin{experienceBlock}
 \positionAndCompanyLine{Front-end Developer}{9bits}{05/2020 - 06/2022}
-\project{Ecommerce B2B}{pre-production and maintenance}
+\project{Orbico}{Ecommerce B2B}
 \begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
 \begin{itemize}
-    \item coding: 60\% development / 40\% maintenance
+    \item Work split: 60\% greenfield / 40\% maintenance
     \item decomposition of business requirements into technical tasks
     \item buddy for junior developers
     \item coordination of developers' work (epic scope)
     \item production deploys
 \end{itemize}
-\techStackList{Typescript, React, Redux-Saga, Styled Components, Jest, Storybook.}
-\vspace{0.5em}
+\techStackList{Typescript, React, Redux-Saga, Styled Components, Jest, Storybook}
+\end{experienceBlock}
 
+\begin{experienceBlock}
 \positionAndCompanyLine{Junior Front-end Developer}{9bits}{07/2019 - 05/2020}
-\project{Ecommerce B2C}{maintenance}
+\project{Smyk}{Ecommerce B2C}
 \begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
 \begin{itemize}
-    \item coding: 30\% development / 70\% maintenance
+    \item Work split: 30\% greenfield / 70\% maintenance
 \end{itemize}
 \techStackList{React, Redux-Thunk, LESS, server side rendering (Express.js)}
-\vspace{0.5em}
+\end{experienceBlock}
 
+\begin{experienceBlock}
 \positionAndCompanyLine{Front-end Developer}{Hatonero}{02/2019 - 07/2019}
-\project{Administration panel for educational service}{pre-production and maintenance}
+\project{Judgment Explorer}{Administration panel for educational service}
 \begin{adjustwidth}{1em}{0em}
 \begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
 \begin{itemize}
-    \item coding: 80\% development / 20\% maintenance
+    \item Work split: 100\% greenfield
 \end{itemize}
-\techStackList{VUE.JS, Firebase, Vuetify.}
+\techStackList{VUE.JS, Firebase, Vuetify}
 \end{adjustwidth}
-\project{Real-time educational game/survey}{maintenance}
+\project{Real-time educational game/survey}{}
 \begin{adjustwidth}{1em}{0em}
 \begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
 \begin{itemize}
-    \item coding: 100\% maintenance
+    \item Work split: 100\% maintenance
 \end{itemize}
 \techStackList{Backbone.js, Firebase.}
 \end{adjustwidth}
-\vspace{1em}
+\end{experienceBlock}
 
+\begin{experienceBlock}
 \positionAndCompanyLine{Gap to learn programming}{freelance}{02/2018 - 02/2019}
-\techStackList{HTML/CSS, JavaScript, Wordpress, Angular.}
-\vspace{0.3em}
+\project{Web development}{simple implementations based on WordPress and static sites}
+\project{Learn}{Side projects and recruitment take-home assignments}
+\techStackList{HTML/CSS, JavaScript, WordPress, Angular}
+\end{experienceBlock}
 
+\begin{experienceBlock}
 \positionAndCompanyLine{Account Manager}{Vena Art}{11/2015 - 02/2018}
 \begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
 \begin{itemize}
@@ -132,7 +182,7 @@
     \item preparation of offers for potential clients
     \item media production (print, video, web)
 \end{itemize}
-\techStackList{Microsoft Office, Google Analytics.}
+\end{experienceBlock}
 
 \end{adjustwidth}
 
